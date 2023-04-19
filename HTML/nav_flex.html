@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: #2b2d42;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: stretch;
+        }
+        li{
+            list-style: none;
+        }
+        .container a{
+            display: inline-block;
+            padding: 25px;
+            margin: 0 25px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+            color: pink;
+        }
+        p::after{
+            content: "7854675476";
+        }
+        p::before{
+            content: "before ";
+        }
+
+    </style>
+</head>
+<body>
+    <div >
+        <p>Letter jhgsdgdsgh</p>
+        <ul class="container">
+            <li><a >Home</a></li>
+            <li><a>Menu</a></li>
+            <li><a>Culinary Blog</a></li>
+            <li><a>About Us</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

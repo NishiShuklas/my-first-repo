@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effect</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* background-color: black; */
+        }
+
+        .text {
+            width: 300px;
+            border: 2px solid rgb(104, 2, 2);
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+            text-overflow: clip;
+        }
+
+        .text:hover {
+            overflow: visible;
+        }
+
+        .vert {
+            writing-mode: vertical-rl
+        }
+
+        .word {
+            word-wrap: break-word;
+        }
+
+        #wrap {
+
+            width: 50px;
+            border: 2px solid brown;
+        }
+
+        .shadow{
+            font-size: 30px;
+            text-shadow: 0 0 30px blue, 0 0 30px white;
+        }
+
+        .glow{
+            color: rgb(237,237,151);
+            text-shadow: 
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 31px #fff,
+            0 0 55px rgb(255,226,4),
+            0 0 91px rgb(255,226,4),
+            0 0 100px rgb(255,226,4),
+            0 0 122px rgb(255,226,4),
+            0 0 140px rgb(255,226,4)
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Elipsis Property</h1>
+        <div class="text">This is sample write-up to show use of the text-overflow property</div>
+        <!-- Fun vertical  -->
+        <h1 style="color: brown">Vertical Text</h1>
+        <p class="vert">12-15 times</p>
+        <!-- word wrap -->
+        <p class="word" id="wrap">Illustration of word wrap property</p>
+        <!-- text shadow -->
+        <p class="shadow">Text Shadow</p>
+        <!-- Glow -->
+        <div class="container">
+            <h1 class="glow">Little Lemon</h1>
+            <h3 class="glow">Open for Dining!</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
